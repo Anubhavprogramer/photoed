@@ -1,21 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+/* {
+ font-family: 'Prosto One', cursive;
+ font-family: 'Rowdies', cursive;
+} */
+
+/* navbar css */
 *{
   margin: 0;
   padding: 0;
 }
+.fullbodyconatiner{
+  background-image: url(./assets/background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .navbar{
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  padding:  10px 0;
+  padding:  10px 50px;
 }
+
 .navigation > ul{
   display: flex;
   list-style: none;
+  margin-bottom: 0;
 }
 .navigation > ul >li{
-  margin: 10px 30px;
+  margin: 10px 10px;
+}
+.navigation > ul >li>a{
+  color: white;
+  text-decoration:  none;
+}
+
+.navbar > p{
+  margin: 10px 10px;
+}
+
+/* home page css */
+
+.homecontainer{
+  padding: 100px 50px;
+  height: 91.4vh;
+  
+}
+.heading > p{
+  font-size: 55px;
+  font-family: 'Prosto One', cursive;
+  color: white;
+  text-shadow: 
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
+}
+.heading > p >strong{
+  color: orangered;
+  font-family: 'Prosto One', cursive;
+  text-shadow: 
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
+}
+.disc{
+  display: flex;
+  justify-content: left;
+}
+.disc > p{
+  margin-right: 60%;
+  font-size: 20px;
   color: white;
 }
-.navbar > p{
-  margin: 10px 30px;
+button{
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  font-family: 'Rowdies', cursive;
+  color: white;
+  background: none;
 }

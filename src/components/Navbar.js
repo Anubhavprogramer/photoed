@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
+
     <div className="navbar">
       <p>
         <span style={{color:'white'}}>PHOT</span>
@@ -10,19 +11,21 @@ export default function Navbar() {
       <div className="navigation">
         <ul>
           <li>
-            Home
+            <a href="#">Home</a>
           </li>
           <li>
-            Mobile
+            <a href="#">Mobile</a>
           </li>
           <li>
-            Dextop
+            <a href="#">Dextop</a>
           </li>
           <li>
-            Contact us
+            <a href="#">Contact us</a>
           </li>
         </ul>
       </div>
     </div>
+
+
   )
 }
