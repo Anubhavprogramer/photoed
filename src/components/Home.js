@@ -16,7 +16,7 @@ export default function Home() {
           Soar with Each Captivating, as Nature's Love Embraces Your Soul.
         </p>
       </div>
-      <button>
+      <button className="btn">
         Let's start
       </button>
     </div>

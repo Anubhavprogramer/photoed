@@ -18,6 +18,8 @@
   background-repeat: no-repeat;
 }
 .navbar{
+  background-image: url(./assets/background.jpg);
+  background-size: 100% 1200%;
   display: flex;
   justify-content: space-between;
   padding:  10px 50px;
@@ -43,8 +45,10 @@
 /* home page css */
 
 .homecontainer{
-  padding: 100px 50px;
-  height: 91.4vh;
+  background-image: url(./assets/background.jpg);
+  background-size: 100% 100%;
+  padding: 10px 50px;
+  height: 89.1vh;
   
 }
 .heading > p{
@@ -75,8 +79,9 @@
   font-size: 20px;
   color: white;
 }
-button{
-  margin: 10px;
+.btn{
+  /* margin: 10px; */
+  margin-top: 100px;
   font-size: 30px;
   border-radius: 10px;
   padding: 0px 10px;
@@ -84,3 +89,113 @@ button{
   color: white;
   background: none;
 }
+
+
+/* moblie part */  
+
+/* dextop css */
+
+.Header-text{
+  font-size: 50px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+}
+
+.Header-text > strong{
+    color: rgb(164, 155, 155);
+}
+
+
+.container{
+  margin-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.slider-wraper{
+  position: relative;
+}
+.img-list{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(30 ,1fr);
+  overflow-x: auto;
+  transition: left 1s ease-in-out;
+}
+.img-list::-webkit-scrollbar{
+  display: none;
+}
+.img-item{
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 500px;
+}
+
+.srolbar{
+  /* background-color: red; */
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.srolbar .scrollbar-tracker{
+  height: 2px;
+  width: 100%;
+  background-color: grey;
+  position: relative;
+  border-radius: 10px;
+}
+
+.srolbar:hover .scrollbar-tracker{
+  height: 4px;
+}
+.srolbar .scrollbar-thumb{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  border-radius: inherit;
+  cursor: grab;
+  transition: left 1s ease-in-out;
+}
+.srolbar .scrollbar-thumb:active{
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.srollbar-thumb::after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+
+.side-button{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ color: white;
+ background-color: black;
+ border: none;
+ outline: none;
+ border-radius: 50%;
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+}
+.side-button:hover{
+  background-color: rgb(97, 88, 88);
+}
+.side-button#prevslide{
+  left: 150px;
+}
+
+.side-button#nextslide{
+  right: 150px;
+  
+}
+
